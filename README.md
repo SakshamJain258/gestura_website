@@ -28,7 +28,7 @@
 
 ## 🎨 About The Website
 
-This is the high-performance, visually premium landing page designed to introduce **Gestura** to the world. It showcases the desktop application's capability to bridge communication gaps for Deaf and hard-of-hearing individuals by offering real-time American Sign Language (ASL) transcription directly on video calls.
+This is the high-performance, visually premium landing page designed to introduce **Gestura** to the world. It showcases the desktop application's capability to bridge communication gaps for specially-abled, non-vocal individuals who cannot speak by offering real-time American Sign Language (ASL) transcription directly on video calls.
 
 The site is styled with sleek dark-mode aesthetics, custom micro-animations, and an interactive particle network representing skeletal hand landmarks.
 

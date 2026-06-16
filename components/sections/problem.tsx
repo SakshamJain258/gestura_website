@@ -3,7 +3,7 @@ import { Reveal } from '@/components/reveal'
 const stats = [
   {
     head: '1 in 7 people',
-    body: 'have some form of speech or hearing disability',
+    body: 'have some form of speech impairment or are non-vocal',
   },
   {
     head: 'Video calls',
@@ -31,7 +31,7 @@ export function Problem() {
             </span>
           </p>
           <p className="mt-3 text-lg text-muted-foreground sm:text-xl">
-            deaf individuals worldwide
+            non-vocal individuals worldwide
           </p>
         </Reveal>
 
