@@ -1,6 +1,7 @@
 import { Download } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Reveal } from '@/components/reveal'
+import { siteLinks } from '@/lib/site-links'
 
 const steps = [
   {
@@ -52,7 +53,13 @@ export function GetStarted() {
                   size="lg"
                   className="mt-6 gap-2 bg-primary text-primary-foreground shadow-[0_0_28px_-6px] shadow-primary/50 hover:bg-primary/90"
                   nativeButton={false}
-                  render={<a href="#" />}
+                  render={
+                    <a
+                      href={siteLinks.download}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    />
+                  }
                 >
                   <Download className="size-4" />
                   Download for Windows
@@ -61,6 +68,7 @@ export function GetStarted() {
             </Reveal>
           ))}
         </div>
+
 
         <Reveal delay={120} className="mt-8 text-center">
           <p className="text-xs text-muted-foreground">
