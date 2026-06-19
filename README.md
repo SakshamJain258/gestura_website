@@ -11,7 +11,7 @@
   <img alt="React" src="https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react">
   <img alt="TailwindCSS" src="https://img.shields.io/badge/TailwindCSS-v4.0-38B2AC?style=flat-square&logo=tailwindcss">
   <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-5.x-3178C6?style=flat-square&logo=typescript">
-  <img alt="Vercel" src="https://img.shields.io/badge/Deployment-Vercel-000000?style=flat-square&logo=vercel">
+  <img alt="AWS Amplify" src="https://img.shields.io/badge/Deployment-AWS_Amplify-FF9900?style=flat-square&logo=awsamplify">
   <img alt="License" src="https://img.shields.io/badge/License-MIT-yellow?style=flat-square">
 </p>
 
@@ -139,11 +139,32 @@ npm run build
 
 ## 🛠️ Deployment
 
-The project is optimized for deployment on the **Vercel** platform:
+The project is deployed and hosted on **AWS Amplify**:
 
-1. Connect your GitHub repository to Vercel.
-2. The platform will automatically detect Next.js and configure the build command (`next build`) and output directory.
-3. Click **Deploy**. Vercel will build and serve your site globally.
+*   **Live Link:** [Gestura Web Portal](https://main.d9h6fx0138k7u.amplifyapp.com/)
+*   **Platform:** AWS Amplify (configured with Next.js App Router support for continuous deployment from GitHub).
+
+### Amplify Build Specification (`amplify.yml`)
+```yaml
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - npm install
+    build:
+      commands:
+        - npm run build
+  artifacts:
+    baseDirectory: .next
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
+      - .next/cache/**/*
+```
+
 
 ---
 
